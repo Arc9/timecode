@@ -320,11 +320,11 @@ class Timecode
   
   # get formatted SMPTE timecode
   def to_s
-    if (framerate_in_delta(fps, 24))
-      WITH_FRAMES_24 % value_parts
-    else
+    #if (framerate_in_delta(fps, 24))
+    #  WITH_FRAMES_24 % value_parts
+    #else
       WITH_FRAMES % value_parts
-    end
+    #end
   end
   
   # get total frames as float
